@@ -1,4 +1,4 @@
-package br.com.lucasdemetrius.desafio_todolist;
+package br.com.lucasdemetrius.desafiotodolist;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
