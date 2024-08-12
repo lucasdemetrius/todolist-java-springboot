@@ -7,6 +7,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import br.com.lucasdemetrius.desafiotodolist.entity.Todo;
 import br.com.lucasdemetrius.desafiotodolist.service.TodoService;
+import jakarta.validation.Valid;
 import jakarta.websocket.server.PathParam;
 
 import org.springframework.web.bind.annotation.DeleteMapping;
@@ -27,7 +28,7 @@ public class TodoController {
     }
     
     @PostMapping
-    List<Todo> create(@RequestBody Todo todo){
+    List<Todo> create(@RequestBody @Valid Todo todo){
         return todoService.create(todo);
     }
 
